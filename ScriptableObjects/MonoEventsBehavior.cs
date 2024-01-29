@@ -18,9 +18,30 @@ public class MonoEventsBehavior : MonoBehaviour
       startEvent.Invoke();
    }
 
+   private void OnEnable()
+   {
+      startEvent.Invoke();
+   }
+
    private void OnDisable()
    {
       disableEvent.Invoke();
    }
-    
+   
+   private void OnCollisionEnter(Collision other)
+   {
+      collisionEnterEvent.Invoke();
+   }
+
+   private void OnCollisionExit(Collision other)
+   {
+      collisionExitEvent.Invoke();
+   }
+
+   private void OnTriggerEnter(Collision other)
+   {
+      triggerEnterEvent.Invoke();
+   }
+   
+
 }
