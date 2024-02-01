@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Vector3Data", menuName = "ScriptableObjects/Vector3Data", order = 1)]

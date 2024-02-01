@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -27,21 +25,11 @@ public class MonoEventsBehavior : MonoBehaviour
    {
       disableEvent.Invoke();
    }
-   
-   private void OnCollisionEnter(Collision other)
-   {
-      collisionEnterEvent.Invoke();
-   }
 
-   private void OnCollisionExit(Collision other)
-   {
-      collisionExitEvent.Invoke();
-   }
-
-   private void OnTriggerEnter(Collision other)
-   {
-      triggerEnterEvent.Invoke();
-   }
    
+   private void getComponent<T>()
+   {
+      GetComponent<T>();
+   }
 
 }
