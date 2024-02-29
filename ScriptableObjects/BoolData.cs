@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu]
 
+[CreateAssetMenu(fileName = "BoolData", menuName = "ScriptableObjects/BoolData", order = 3)]
 public class BoolData : ScriptableObject
 {
     public bool value;  

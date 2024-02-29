@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu]
 
+[CreateAssetMenu(fileName = "FloatData", menuName = "ScriptableObjects/FloatData", order = 1)]
 public class FloatData : ScriptableObject
 {
     public float value;
